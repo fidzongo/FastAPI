@@ -1,4 +1,4 @@
-# FastAPI
+# Gestionnaire de QCM avec FastAPI
 Mise en place d'un gestionneur de QCM avec FastAPI.
 
 FastAPI :
