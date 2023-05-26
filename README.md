@@ -23,7 +23,7 @@ ou
 pip install -r requirements.txt
 ```
 
-# Authentification des utilisateurs
+# Authentification
 Une authentification basique, à base de nom d'utilisateur et de mot de passe est utilisée.
 La chaîne de caractères contenant Basic username:password est passée dans l'en-tête Authorization.
 
