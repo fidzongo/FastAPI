@@ -7,6 +7,13 @@ FastAPI :
 - Utilisation de OpenAPI (anciennement Swagger) comme documentation et permet de facilement mettre en place des tests.
 
 # Contenu
+<ul id="menu">
+  <li><a href="https://github.com/fidzongo/Gestionnaire-de-QCM-avec-FastAPI/blob/main/README.md#contexte" title="Contexte">Contexte</a></li>
+  <li><a href="https://github.com/fidzongo/Gestionnaire-de-QCM-avec-FastAPI/blob/main/README.md#installation-de-fastapi" title="Installation de FastAPI">Installation de FastAPI</a></li>
+  <li><a href="https://github.com/fidzongo/Gestionnaire-de-QCM-avec-FastAPI/blob/main/README.md#authentification" title="Authentification">Authentification</a></li>
+  <li><a href="https://github.com/fidzongo/Gestionnaire-de-QCM-avec-FastAPI/blob/main/README.md#code-de-lapi" title="Code de l'API">Code de l'API</a></li>
+  <li><a href="https://github.com/fidzongo/Gestionnaire-de-QCM-avec-FastAPI/blob/main/README.md#tests--utilisation-de-lapi" title="Tests / Utilisation de l'API">Tests / Utilisation de l'API</a></li>
+</ul>
 
 # Contexte
 Il s'agit ici de mettre en place une application qui vas permettre d'intérroger une base de données pour retourner une série de questions sous forme de QCM. L'application permet également d'ajouter ou de modifier des questions. La base de données est représentée par le fichier csv questions.csv
