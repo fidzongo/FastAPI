@@ -370,28 +370,27 @@ async def put_questions(question: Question, auth: str = Depends(auth), current_t
 
 # Tests / Utilisation de l'API
 
-	Ajout d’un utilisateur
+## Ajout d’un utilisateur
 curl -X 'PUT' \
   'http://localhost:8000/users' \
   -H 'accept: application/json' \
   -H 'Content-Type: application/json' \
   -d '{
-  "username": "Bob",
-  "password": "Builder"
+  "username": "XXXX",
+  "password": "XXXX"
 }'
 
-
-	Affichage des uses disponibles
+## Affichage des uses disponibles
 curl -X 'GET' \
   'http://localhost:8000/use' \
   -H 'accept: application/json' \
-  -H 'Authorization: Basic alice:wonderland'
+  -H 'Authorization: Basic XXXX:XXXX'
 
-	Affichage des subjects disponibles
+## Affichage des subjects disponibles
 curl -X 'POST' \
   'http://localhost:8000/qcm' \
   -H 'accept: application/json' \
-  -H 'Authorization: Basic alice:wonderland' \
+  -H 'Authorization: Basic XXXX:XXXX' \
   -H 'Content-Type: application/json' \
   -d '{
   "use_type": "Test de validation",
@@ -401,11 +400,11 @@ curl -X 'POST' \
   ]
 }'
 
-	Génération d’un QCM de 5 questions (on peut le relancer plusieurs fois pour voir que les questions affichent aléatoirement)
+## Génération d’un QCM de 5 questions (on peut le relancer plusieurs fois pour voir que les questions affichent aléatoirement)
 curl -X 'POST' \
   'http://localhost:8000/qcm' \
   -H 'accept: application/json' \
-  -H 'Authorization: Basic Fidele:Zongo' \
+  -H 'Authorization: Basic XXXX:XXXX' \
   -H 'Content-Type: application/json' \
   -d '{
   "use_type": "Test de positionnement",
@@ -416,11 +415,11 @@ curl -X 'POST' \
   ]
 }'
 
-	Ajout d’une question
+## Ajout d’une question
 curl -X 'PUT' \
   'http://localhost:8000/questions' \
   -H 'accept: application/json' \
-  -H 'Authorization: Basic admin:4dm1N' \
+  -H 'Authorization: Basic XXXX:XXXX' \
   -H 'Content-Type: application/json' \
   -d '{
   "question": "FastAPI Permet il de",
@@ -433,17 +432,4 @@ curl -X 'PUT' \
   "responseD": "Permet une documentation automatique",
   "remark": "Ajout question"
 }'
-
-Pour vérifier l’ajout de la question précédente on peut exécuter ces requetes :
-curl -X 'GET' \
-  'http://localhost:8000/use' \
-  -H 'accept: application/json' \
-  -H 'Authorization: Basic admin:4dm1N'
-
-Où
-
-curl -X 'GET' \
-  'http://localhost:8000/subject?use=FastAPI' \
-  -H 'accept: application/json' \
-  -H 'Authorization: Basic admin:4dm1N'
 
